@@ -14,7 +14,7 @@ app.use(logger('dev'));
 app.use(express.static('public'));
 
 //Mongoose 
-mongoose.connect('mongodb://heroku_z2hrssqk:2p05ml5kqb9log7uvffai3fgcg@ds143707.mlab.com:43707/heroku_z2hrssqk');
+mongoose.connect('mongodb://heroku_ggt69sc8:lkdpgg6v606amtgd5i1ci0g1ks@ds129018.mlab.com:29018/heroku_ggt69sc8');
 var db = mongoose.connection;
 
 db.on('error', function(err){
