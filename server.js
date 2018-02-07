@@ -5,6 +5,8 @@ var PORT = process.env.PORT || 3000;
 var request = require('request');
 var cheerio = require('cheerio');
 var mongoose = require('mongoose');
+var expressHandlebars = require('express-handlebars');
+
 
 //Morgan
 var logger = require('morgan');
@@ -25,7 +27,6 @@ db.once('open', function(){
 });
 
 //Handlebars
-var expressHandlebars = require('express-handlebars');
 app.engine('handlebars', expressHandlebars({
   defaultLayout: 'main'
 }));
